@@ -11,7 +11,7 @@ class Nfn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.1.0/nfn-cli_darwin_amd64.tar.gz"
-      sha256 "621db57a4e0f72400ea4a979caad623b41daae092b2ff0a5487673ab2be651a8"
+      sha256 "f1d6514f80d7f4497460e4f9cb928921a2e3ea4eb0a2eb85a7fe8155e13763e2"
 
       define_method(:install) do
         bin.install "nfn"
@@ -19,7 +19,7 @@ class Nfn < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.1.0/nfn-cli_darwin_arm64.tar.gz"
-      sha256 "46f6100e6e12082353b772d46f4d30394d23808ec41ff38e322c026f302a30bf"
+      sha256 "fbff35baa47526d8d7c34639506eb22913340d3334fc409cd080d326e9cb749c"
 
       define_method(:install) do
         bin.install "nfn"
@@ -30,14 +30,14 @@ class Nfn < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.1.0/nfn-cli_linux_amd64.tar.gz"
-      sha256 "f7f18f6e8371aa8d67c92f3c981f4db15ebfc19a43cb9a78782690cc68f22650"
+      sha256 "2b691c4c043418ccec5133210a92b31dfb4e6f29d094ecaf57aed17dc3c98ea7"
       define_method(:install) do
         bin.install "nfn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.1.0/nfn-cli_linux_arm64.tar.gz"
-      sha256 "5ae31e09180b87288c537643b6d17598584b718b2ba8b78998b9863633e00bbd"
+      sha256 "62223cb6cb267a914fca714d2cd9a243389561e80bc9363f5e1d480989e44789"
       define_method(:install) do
         bin.install "nfn"
       end
