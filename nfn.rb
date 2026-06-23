@@ -5,21 +5,21 @@
 class Nfn < Formula
   desc "CLI for the Nordic Financial News API"
   homepage "https://github.com/nordic-financial-news/nfn-cli"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.2.1/nfn-cli_darwin_amd64.tar.gz"
-      sha256 "07420b6d2b12834bd6d5ffa43cc249877f2d882733f03cf8b019ee252c4b0cd6"
+      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.3.0/nfn-cli_darwin_amd64.tar.gz"
+      sha256 "9bc0144b8676969d1153cc7578b2fe2d1503a5723513e76d1ef7726ce12458ab"
 
       define_method(:install) do
         bin.install "nfn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.2.1/nfn-cli_darwin_arm64.tar.gz"
-      sha256 "5885d105626da175b117df73c1f376495a8c2f98164d528dc63ea6f2fc158396"
+      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.3.0/nfn-cli_darwin_arm64.tar.gz"
+      sha256 "ed64d303b59c41b2b0e75c1d60e3ddf5c78572b82efed544405755dd31100aaa"
 
       define_method(:install) do
         bin.install "nfn"
@@ -29,15 +29,15 @@ class Nfn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.2.1/nfn-cli_linux_amd64.tar.gz"
-      sha256 "a65b72c37f22843d9f360ca9c1162ce23f05cabc406a44517e6bd75675a3376f"
+      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.3.0/nfn-cli_linux_amd64.tar.gz"
+      sha256 "5231f0e112d9a1d54a375eb9fd8c2dc72504e8deb3bb545bf4b3722b5fcee8c4"
       define_method(:install) do
         bin.install "nfn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.2.1/nfn-cli_linux_arm64.tar.gz"
-      sha256 "580428e6be7aa6210f4ea34e1aca20d2c943f84c526e67c8f75509f9b98c31ef"
+      url "https://github.com/nordic-financial-news/nfn-cli/releases/download/v0.3.0/nfn-cli_linux_arm64.tar.gz"
+      sha256 "33b61a64a601137a5dcd4b02ccce15cba0ea361f778808d6d575d04bb00b70df"
       define_method(:install) do
         bin.install "nfn"
       end
